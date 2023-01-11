@@ -1,0 +1,38 @@
+@media screen and (min-width: 800px) {
+
+
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: initial;
+  }
+  .nav {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+    width: initial;
+    height: initial;
+    position: initial;
+    background-color: initial;
+  }
+  .menu {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+  }
+  .menu__option {
+    margin-bottom: initial;
+  }
+  .menu--btn {
+    padding: 0.9rem 2rem;
+  }
+  .menubar {
+    display: none;
+  }
+}

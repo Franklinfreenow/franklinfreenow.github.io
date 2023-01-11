@@ -1,0 +1,63 @@
+/*------------------------VARIABLES---------------------------------*/
+:root {
+  /*text*/
+  --tittle: #454545;
+  --subtitle: #757575;
+  --othertitle: #bfbdbd;
+  /*general*/
+  --background-btn: #252525;
+  --background-btn-2: #ce3232;
+  --hover: #ce3232;
+}
+
+/*BODY*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+body {
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+  padding: 1rem;
+  justify-items: center;
+  gap: 1.5rem;
+}
+.maps {
+  width: 100%;
+  max-width: 40rem;
+  height: 20rem;
+}
+.maps__img {
+  width: 100%;
+  height: 20rem;
+}
+.contact__form {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6em;
+}
+.contact__input {
+  border-bottom: solid 1px;
+  border-color: var(--othertitle);
+}
+.contact__input--btn h6 {
+  background-color: var(--background-btn-2);
+  text-align: center;
+  padding: 1rem 0rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+.contact__input--btn h6:hover{
+  background-color: var(--background-btn);
+  transition: ease .7s;
+  -webkit-transition: ease .7s;
+  -moz-transition: ease .7s;
+  -ms-transition: ease .7s;
+  -o-transition: ease .7s;
+}

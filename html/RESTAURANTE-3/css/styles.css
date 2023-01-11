@@ -1,0 +1,283 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffff;
+}
+
+/*HEADER*/
+
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5em;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  color: #201b17;
+  position: relative;
+}
+.logo {
+  font-weight: bold;
+}
+
+/*NAV*/
+
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fe0131;
+  margin-top: 5rem;
+  font-size: 0.5em;
+  padding: 2rem;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease 0.6s;
+}
+.nav--on {
+  visibility: visible;
+  opacity: 1;
+  transition: ease 0.6s;
+}
+.nav__section {
+  transition: ease 0.6s;
+}
+.nav__section:hover {
+  color: #000;
+  transition: ease 0.6s;
+}
+.bx-menu {
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+/*MAIN*/
+
+.main {
+  width: 100%;
+}
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: solid 1px;
+  padding-bottom: 5rem;
+}
+.home__image {
+  width: 100%;
+  text-align: center;
+}
+.home__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000;
+}
+.button__btn {
+  color: #ffff;
+  background-color: #201b17;
+  width: 13rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease 0.7s;
+}
+.button__btn:hover {
+  background-color: #fe0131;
+  transition: ease 0.7s;
+  border-radius: 2rem;
+}
+
+/*ABOUT*/
+
+.about {
+  width: 100%;
+}
+.about__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+.about__h6 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+}
+.about__h6 span {
+  color: #fe0131;
+}
+.about__p {
+  font-size: 0.6em;
+  color: #6d6d6d;
+}
+
+/*CARD*/
+
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 7rem;
+  border-bottom: solid 1px;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  justify-items: center;
+  padding: 0 2rem;
+  gap: 3rem;
+}
+.card__image {
+  width: 100%;
+}
+.card__img {
+  width: 100%;
+  object-fit: cover;
+}
+.card__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.card__h3 {
+  font-weight: bold;
+  font-size: 2em;
+}
+.card__p {
+  color: #6d6d6d;
+}
+.card__link {
+  font-weight: 300;
+  transition: ease 0.6s;
+}
+.card__link:hover {
+  color: #fe0131;
+  transition: ease 0.6s;
+}
+.about__store {
+  width: 100%;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  gap: 2rem;
+  border-bottom: solid 1px;
+}
+.about__h3 {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.about__h3 span {
+  color: #fe0131;
+}
+.button__btn--small {
+  font-size: 0.5em;
+}
+
+/*TESTIMONIAL*/
+
+.testimonial {
+  width: 100%;
+}
+.testimonial__title {
+  font-size: 2.1em;
+  text-align: center;
+  color: #474646;
+  padding: 8rem 0rem;
+}
+.testimonial__h2 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.testimonial__p {
+  font-size: 0.6em;
+}
+.card--testimonial {
+  border-bottom: solid 1px;
+  padding-bottom: 6rem;
+}
+
+/*FOOTER*/
+
+.contact {
+  width: 100%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 6rem;
+  margin-top: 5rem;
+  border-bottom: solid 1px;
+}
+.contact__wines {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #000;
+}
+.contact__p {
+  color: #474646;
+  font-size: 0.8em;
+  margin-top: 2rem;
+}
+.form {
+  width: 100%;
+}
+.form__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #474646;
+  gap: 2rem;
+}
+.form__input {
+  width: 28rem;
+  font-family: inherit;
+  border-bottom: solid 1px;
+  padding-bottom: 2rem;
+  font-size: 1.2em;
+}
+.form__cta {
+  font-family: inherit;
+  color: #ffff;
+  background-color: #201b17;
+  width: 13rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease 0.7s;
+  cursor: pointer;
+}
+.form__cta:hover {
+  background-color: #fe0131;
+  transition: ease 0.7s;
+  border-radius: 2rem;
+}
+.contact__p--copyright {
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+  padding: 3rem 2rem;
+}

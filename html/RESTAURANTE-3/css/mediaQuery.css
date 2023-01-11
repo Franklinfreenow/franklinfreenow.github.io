@@ -1,0 +1,32 @@
+@media screen and (min-width: 800px) {
+  .nav {
+    width: initial;
+    position: initial;
+    background-color: initial;
+    margin-top: initial;
+    font-size: initial;
+    padding: initial;
+    color: #000;
+    flex-direction: row;
+    visibility: initial;
+    opacity: initial;
+    transition: initial;
+    font-size: .5em;
+  }
+  .bx-menu {
+    display: none;
+  }
+  .nav__section:hover{
+    color: #fe0131;
+  }
+  .card__image {
+    width: 30rem;
+  }
+  .card__img {
+    width: 30rem;
+  }
+  .card__title{
+    font-size: 1.3em;
+  }
+  
+}
