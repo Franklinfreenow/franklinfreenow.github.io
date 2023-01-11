@@ -1,0 +1,329 @@
+:root {
+  /* FONT */
+  --font-regular: "Roboto", sans-serif;
+
+  /* COLOR */
+  --bg-regular-color: #222222;
+  --primary-color: #d32f2f;
+
+  /* FONT-COLOR */
+  --font-regular-color: #ffffff;
+  --font-primary-color: #212121;
+  --font-secundary-color: #757575;
+  --accent-color: #9e9e9e;
+  --border-color: #bdbdbd;
+
+  /*thin 100, regular 400, bold 700*/
+}
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--bg-regular-color);
+  font-family: var(--font-regular);
+  font-size: 18px;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  position: fixed;
+  z-index: 10;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-regular-color);
+  width: 100%;
+  height: 40vh;
+  font-weight: 100;
+  font-size: 1.1em;
+  padding: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease 0.4s;
+  z-index: 10;
+}
+
+.nav-toggle {
+  visibility: initial;
+  opacity: 1;
+  transition: ease 0.4s;
+}
+
+.menu {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.menu-desktop {
+  display: none;
+}
+
+.menu-off {
+  margin: 0 0 0 15rem;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.menu__section {
+  list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--font-regular-color);
+}
+
+.menu-on {
+  font-size: 2em;
+  color: var(--font-regular-color);
+  border: solid 2px var(--primary-color);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  background: no-repeat center url(/img/HERO-DESKTOP.png);
+  background-size: cover;
+  height: 100%;
+  min-height: 90vh;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  opacity: 0.8;
+}
+
+.hero__txt {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  color: var(--font-regular-color);
+  display: grid;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.hero__h2 {
+  font-weight: 100;
+  font-size: 3em;
+}
+
+.hero__h1 {
+  font-weight: 700;
+  font-size: 2.2em;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.hero__h3 {
+  font-weight: 100;
+  font-size: 0.7em;
+}
+
+/* PORTAFOLIO */
+
+.portafolio {
+  padding: 7rem 0rem;
+}
+
+.portafolio__title {
+  text-align: center;
+  color: var(--font-regular-color);
+  font-weight: 700;
+  font-size: 2.2em;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn {
+  font-family: var(--font-regular);
+  background-color: var(--primary-color);
+  color: var(--font-regular-color);
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 1rem 0.4rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  transition: ease 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--font-regular-color);
+  color: var(--primary-color);
+}
+
+.btn--red {
+  background-color: var(--font-regular-color);
+  color: var(--primary-color);
+}
+
+.portafolio__modal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.66rem, 1fr));
+  justify-items: center;
+  margin-top: 3rem;
+  gap: 2rem;
+  opacity: 1;
+  transition: ease 0.7s;
+}
+
+.portafolio__modal--out {
+  opacity: 0;
+  transition: ease 0.7s;
+  position: fixed;
+}
+
+.thumbnail__figure {
+  width: 16.66rem;
+  height: 16.66rem;
+  position: relative;
+}
+
+.thumbnail__img {
+  width: 16.66rem;
+  height: 16.66rem;
+  object-fit: cover;
+  border: solid 5px var(--primary-color);
+  transition: ease 0.5s;
+}
+
+.thumbnail__img:hover {
+  width: 15rem;
+  height: 15rem;
+  transition: ease 1s;
+}
+
+.thumbnail__img--out {
+  display: none;
+}
+
+.thumbnail__txt {
+  text-align: center;
+  color: var(--font-regular-color);
+  margin-top: 1rem;
+}
+
+.thumbnail__p {
+  font-weight: 400;
+}
+
+.thumbnail__p span {
+  color: var(--primary-color);
+}
+
+/* ABOUT ME */
+
+.about-me {
+  padding: 7rem 0rem;
+  background-color: var(--primary-color);
+}
+
+.about-me__title {
+  text-align: center;
+  color: var(--font-regular-color);
+  font-weight: 700;
+  font-size: 2.2em;
+  margin-bottom: 5rem;
+}
+
+.about-me__figure {
+  width: 100%;
+  height: 65vh;
+}
+
+.about-me__img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+.about-me__txt {
+  font-size: 0.83rem;
+  color: var(--font-regular-color);
+  text-align: start;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.about-me__h3 {
+  font-size: 1.5em;
+}
+
+.about-me__p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.about-me__skills {
+  text-align: center;
+}
+
+/* FOOTER */
+
+.form {
+  padding: 2rem 0rem;
+}
+
+.form__title {
+  text-align: center;
+  color: var(--font-regular-color);
+  font-weight: 700;
+  font-size: 2.2em;
+}
+
+.form__container {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.form__input {
+  background-color: transparent;
+  font-family: var(--font-regular);
+  font-weight: 900;
+  border-bottom: solid 1px #d32f2f;
+  width: 100%;
+  min-width: 10rem;
+  max-width: 35rem;
+  font-size: 1.5em;
+}
+
+.form__cta {
+  background-color: transparent;
+  font-size: 1.5em;
+  border: solid 1px #ffffff;
+}

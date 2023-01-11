@@ -1,0 +1,66 @@
+@media screen and (min-width: 800px) {
+  :root {
+    /* FONT */
+    --font-regular: "Roboto", sans-serif;
+
+    /* COLOR */
+    --bg-regular-color: #222222;
+    --primary-color: #d32f2f;
+
+    /* FONT-COLOR */
+    --font-regular-color: #ffffff;
+    --font-primary-color: #212121;
+    --font-secundary-color: #757575;
+    --accent-color: #9e9e9e;
+    --border-color: #bdbdbd;
+
+    /*thin 100, regular 400, bold 700*/
+  }
+
+  .nav {
+    opacity: initial;
+    visibility: initial;
+    background-color: initial;
+    width: initial;
+    height: initial;
+    position: initial;
+    font-weight: 900;
+    font-size: .9em;
+  }
+
+  .menu-off {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    position: initial;
+  }
+
+  .menu__link:hover {
+    color: var(--primary-color);
+    border-bottom: solid 1px var(--primary-color);
+    transition: ease 0.5s;
+  }
+
+  .menu-on {
+    visibility: hidden;
+  }
+
+  .hero__txt {
+    font-size: 2em;
+  }
+
+  .about-me-container {
+    display: grid;
+  }
+
+  .about-me__figure {
+    grid-column: 1 / 2;
+  }
+
+  .about-me__txt {
+    grid-column: 3 / 4;
+
+  }
+}
